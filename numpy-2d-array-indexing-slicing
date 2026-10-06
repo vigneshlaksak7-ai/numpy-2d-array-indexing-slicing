@@ -1,0 +1,19 @@
+import numpy as np
+
+marks = np.array([[85, 90, 78],
+                  [72, 88, 95],
+                  [91, 76, 89]])
+
+print("Original Marks:\n", marks)
+
+print("\nIndexing:", marks[1, 2])
+print("Negative Indexing:", marks[-1, -1])
+
+print("\nFirst Row:", marks[0])
+print("Second Column:", marks[:, 1])
+
+print("\nSlicing:\n", marks[0:2, 1:3])
+
+print("\nArray Iteration:")
+for row in marks:
+    print(row)
